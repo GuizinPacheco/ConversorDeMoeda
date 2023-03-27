@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7EDAE51"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/your_color"
+        android:textColorHighlight="#F6F1F1"
+        android:textColorHint="#F1F1F1"
+        android:textColorLink="#F1EAEA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/your_color"
+        android:textColorHighlight="#CF0AF1"
+        android:textColorHint="#191515"
+        android:textColorLink="#5F18DD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <EditText
+        android:id="@+id/fieldText"
+        android:layout_width="237dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/your_color"
+        android:ems="10"
+        android:hint="@string/placeholder"
+        android:inputType="numberDecimal"
+        android:textColor="#EE0C0C0C"
+        android:textColorHint="#DFF3EDED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/your_color"
+        android:text="Converter"
+        android:textColorHighlight="@color/your_color"
+        android:textColorHint="#689F27"
+        android:textColorLink="#5A9E0B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/your_color"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldText"
+        tools:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/radio_usd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/your_color"
+            android:text="USD"
+            android:textColor="@color/your_color"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radio_eur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/your_color"
+            android:text="EUR"
+            android:textColor="@color/your_color" />
+
+        <RadioButton
+            android:id="@+id/radio_clp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/your_color"
+            android:text="CLP"
+            android:textColor="@color/your_color" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="307dp"
+        android:layout_height="38dp"
+        android:text="Resultado"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/your_color"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/fieldText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

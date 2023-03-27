@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MonetarioCompleta</string>
+    <string name="title">Currency</string>
+    <string name="question">Quanto é?</string>
+    <string name="placeholder">912.22</string>
+    <string name="Converter">Converter</string>
+    <string name="USD">USD</string>
+    <string name="CLP">CLP</string>
+    <string name="EUR">EUR</string>
+
+
+</resources>
